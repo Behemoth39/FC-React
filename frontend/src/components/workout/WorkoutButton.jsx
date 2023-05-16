@@ -1,5 +1,3 @@
-import "./workout.css";
-
 const WorkoutButton = () => {
   return (
     <div className='buttons'>
@@ -11,7 +9,7 @@ const WorkoutButton = () => {
 
 export default WorkoutButton;
 
-/* Should the if statement be here or in WorkoutList?
+/* where should the if statement be?
 if (window.innerWidth < 950) {
       const buttons = document.querySelector(".container");
       buttons.insertAdjacentHTML(

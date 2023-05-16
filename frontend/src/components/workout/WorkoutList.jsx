@@ -1,6 +1,3 @@
-import WorkoutButton from "./WorkoutButton";
-import "./workout.css";
-
 const WorkoutList = () => {
   const workouts = [
     {
@@ -44,7 +41,6 @@ const WorkoutList = () => {
     <>
       {workouts.map((workout) => (
         <div key={workout.id} className='container'>
-          <WorkoutButton />
           <div className='head'>
             <h3>{workout.exercise}</h3>
             <p className='edit'>E</p>

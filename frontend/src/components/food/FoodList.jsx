@@ -1,5 +1,3 @@
-import "./food.css";
-
 const FoodList = () => {
   const foods = [
     {

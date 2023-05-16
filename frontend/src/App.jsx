@@ -1,11 +1,11 @@
 import React from "react";
-import Food from "./components/food/Food";
+import Workout from "./components/workout/Workout";
 
 import "./assets/css/base.css";
 import "./assets/css/color.css";
 
 const App = () => {
-  return <Food />;
+  return <Workout />;
 };
 
 export default App;
