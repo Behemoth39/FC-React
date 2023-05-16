@@ -1,0 +1,268 @@
+@media screen and (max-width: 949px) {
+  /* remove redundancies */
+  /* put overflow on table */
+  .table-holder {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    zoom: 80%;
+  }
+  .table-container {
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .cal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 9rem;
+    height: 2rem;
+    border-radius: 1.2rem;
+    background-color: var(--btn-dark-color);
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .cal:hover {
+    background-color: var(--btn-light-color);
+  }
+  .main-table {
+    min-width: fit-content;
+    height: fit-content;
+    margin: auto;
+  }
+  .sub-table {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 2.5rem;
+  }
+  .col-1 {
+    background-color: var(--light-color);
+  }
+  .col-2 {
+    background-color: var(--light-color);
+  }
+  .col-4 {
+    background-color: var(--light-color);
+  }
+  .header {
+    text-align: center;
+  }
+  thead {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+  }
+  td {
+    padding: 4px 10px;
+  }
+  tbody {
+    padding: 5px 5px;
+    font-size: 15;
+  }
+  tfoot {
+    height: 45px;
+    color: var(--secondary-edit-color);
+    font-size: 15;
+    background-color: var(--secondary-text-color);
+  }
+  .text-window {
+    text-align: center;
+    background-color: var(--light-color);
+    border: solid 1px var(--dark-color);
+    margin: auto;
+    margin-top: 2rem;
+    min-height: 8rem;
+    width: 90%;
+  }
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--edit-color);
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1279px) {
+  .table-holder {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .table-container {
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .cal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 9rem;
+    height: 2rem;
+    border-radius: 1.2rem;
+    background-color: var(--btn-dark-color);
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .cal:hover {
+    background-color: var(--btn-light-color);
+  }
+  .main-table {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+  }
+  .sub-table {
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+  }
+  .col-1 {
+    background-color: var(--light-color);
+    width: 11rem;
+  }
+  .col-2 {
+    background-color: var(--light-color);
+    width: 6rem;
+  }
+  .col-3 {
+    width: 2rem;
+  }
+  .col-4 {
+    background-color: var(--light-color);
+    width: 4rem;
+  }
+  .header {
+    text-align: center;
+  }
+  thead {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+  }
+  td {
+    padding: 0.2rem 0.5rem;
+  }
+  tbody {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  tfoot {
+    height: 3rem;
+    color: var(--secondary-edit-color);
+    font-size: 1rem;
+    background-color: var(--secondary-text-color);
+  }
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--edit-color);
+  }
+  .sum-note {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  .text-window {
+    text-align: center;
+    background-color: var(--light-color);
+    border: solid 1px var(--dark-color);
+    width: 20rem;
+    height: 25rem;
+    margin-right: auto;
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 160px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: var(--btn-dark-color);
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .cal:hover {
+    background-color: var(--btn-light-color);
+  }
+  .table-holder {
+    width: var(--max-width);
+    margin: auto;
+    margin-top: 50px;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main-table {
+    width: 750px;
+    height: fit-content;
+  }
+  .sub-table {
+    width: 350px;
+    height: fit-content;
+    margin-left: 50px;
+  }
+  .col-1 {
+    background-color: var(--light-color);
+    width: 170px;
+  }
+  .col-2 {
+    background-color: var(--light-color);
+    width: 100px;
+  }
+  .col-3 {
+    width: 20px;
+  }
+  .col-4 {
+    width: 60px;
+    background-color: var(--light-color);
+  }
+  .header {
+    text-align: center;
+  }
+  thead {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+  }
+  td {
+    padding: 4px 10px;
+  }
+  tbody {
+    padding: 5px 5px;
+    font-size: 15;
+  }
+  tfoot {
+    height: 45px;
+    color: var(--secondary-edit-color);
+    font-size: 15;
+    background-color: var(--secondary-text-color);
+  }
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--edit-color);
+  }
+  .text-window {
+    text-align: center;
+    background-color: var(--light-color);
+    border: solid 1px var(--dark-color);
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}

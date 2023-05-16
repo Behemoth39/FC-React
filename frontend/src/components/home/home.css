@@ -1,0 +1,188 @@
+@media screen and (max-width: 949px) {
+  /* Is CSS grid viable */
+  /* remove redundancies */
+  .home-banner {
+    height: fit-content;
+    margin-top: 0.6rem;
+  }
+  .home-banner > p {
+    margin: auto;
+    padding: 2rem;
+  }
+  .workout-container {
+    background-color: var(--background-color);
+  }
+  .workout {
+    display: flex;
+    height: fit-content;
+    color: var(--light-color);
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+  .work-row-2 {
+    padding: 2rem;
+  }
+  .food {
+    display: flex;
+    height: fit-content;
+    margin: auto;
+  }
+  .food-row-1 {
+    padding: 2rem;
+  }
+  .logbook {
+    color: var(--primary-text-color);
+  }
+  .info {
+    background-color: var(--background-color);
+    color: var(--light-color);
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .info-row-1 {
+    width: 50%;
+    padding: 1rem;
+  }
+  .info-row-2 {
+    width: 50%;
+    padding: 1rem;
+  }
+  img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1279px) {
+  .home-banner {
+    height: fit-content;
+    font-size: 1.5rem;
+  }
+  .home-banner > p {
+    margin: auto;
+    padding: 3rem;
+  }
+  .workout-container {
+    background-color: var(--background-color);
+  }
+  .workout {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    color: var(--light-color);
+    font-size: 1.8rem;
+    margin: auto;
+  }
+  .work-row-2 {
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .food {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    font-size: 2rem;
+    margin: auto;
+  }
+  .food-row-1 {
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .logbook {
+    color: var(--primary-text-color);
+  }
+  .info {
+    background-color: var(--background-color);
+    color: var(--light-color);
+    height: fit-content;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .info-row-1 {
+    width: 50%;
+    padding: 1rem;
+  }
+  .info-row-2 {
+    width: 50%;
+    padding: 1rem;
+  }
+  img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .home-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    font-size: 40px;
+  }
+  .home-banner p {
+    width: var(--max-width);
+  }
+  .workout-container {
+    background-color: var(--background-color);
+  }
+  .workout {
+    display: flex;
+    height: 700px;
+    color: var(--light-color);
+    font-size: 25px;
+    width: var(--max-width);
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 60px;
+  }
+  .work-row-1 {
+    width: 50%;
+  }
+  .work-row-2 {
+    padding: 20px;
+    width: 50%;
+  }
+  .food {
+    display: flex;
+    height: 700px;
+    font-size: 25px;
+    width: var(--max-width);
+    margin: auto;
+    padding: 30px;
+    padding-top: 60px;
+  }
+  .food-row-1 {
+    padding: 20px;
+    width: 50%;
+  }
+  .food-row-2 {
+    width: 50%;
+  }
+  .logbook {
+    color: var(--primary-text-color);
+  }
+  .info {
+    background-color: var(--background-color);
+    color: var(--light-color);
+    height: 300px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .info-row-1 {
+    width: 600px;
+    padding: 15px;
+  }
+  .info-row-2 {
+    width: 600px;
+    padding: 15px;
+  }
+  img {
+    display: block;
+    margin-top: 100px;
+  }
+}

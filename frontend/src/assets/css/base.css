@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --max-width: 1200px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+p a {
+  text-decoration: underline;
+}
+
+h3,
+p {
+  margin: 0%;
+}
+
+article {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+footer p {
+  padding: 1rem;
+  color: var(--secondary-text-color);
+}

@@ -1,0 +1,115 @@
+.navbar-mobile {
+  /* varför funkar inte sticky? */
+  height: fit-content;
+  position: sticky;
+  top: 0px;
+}
+.navbar-screen {
+  display: none;
+}
+.mainbar {
+  background: var(--primary-color);
+  height: fit-content;
+  font-weight: bold;
+}
+.navbar-site-name {
+  font-size: 1.5rem;
+}
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1.3rem;
+  padding: 0%;
+  margin: 0%;
+}
+.navbar-links li {
+  padding: 0.6rem;
+}
+.navbar-links a:hover {
+  background-color: var(--secondary-color);
+}
+.li-item {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+.menu-icon {
+  color: var(--secondary-text-color);
+}
+.menu-btn {
+  display: none;
+}
+.navbar-mobile ul:has(li .menu-btn:checked) .li-item {
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar-screen {
+    display: block;
+    height: fit-content;
+    position: sticky;
+    top: 0px;
+  }
+  .navbar-mobile {
+    display: none;
+  }
+  .mainbar {
+    padding: 0.2rem 0rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .navbar-site-name {
+    flex: 1;
+  }
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.3rem;
+  }
+  .navbar-links li {
+    margin: auto;
+  }
+  .navbar-links a {
+    padding: 1rem;
+  }
+  .toggle {
+    display: none;
+  }
+  .li-item {
+    display: block;
+    width: auto;
+  }
+  .subbar {
+    display: flex;
+    position: relative;
+    height: fit-content;
+    background: var(--secondary-color);
+    width: 100%;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .subbar-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0%;
+    margin-left: auto;
+    padding: 0%;
+    font-size: 1.1rem;
+  }
+  .subbar-links a {
+    padding: 0.9rem;
+  }
+  .subbar-links li {
+    padding: 0.3rem;
+  }
+  .subbar-links a:hover {
+    background-color: var(--primary-color);
+  }
+}
+/* Maybe one for screens larger than 2560 as well */
