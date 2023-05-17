@@ -1,5 +1,8 @@
+import React, { useState } from "react";
+
+// For test
 const WorkoutList = () => {
-  const workouts = [
+  const [workouts, udateWorkouts] = useState([
     {
       id: 1,
       exercise: "Squats",
@@ -35,10 +38,23 @@ const WorkoutList = () => {
       reps: [10, 10, 10, 10],
       weight: [18, 18, 18, 18],
     },
-  ];
+  ]);
+
+  // Test for events
+  const handleAddWorkoutClick = () => {
+    const newExercise = {
+      id: 6,
+      exercise: "JM-Press",
+      sets: 3,
+      reps: [9, 9, 9],
+      weight: [105, 105, 105],
+    };
+    udateWorkouts((list) => [...list, newExercise]);
+  };
 
   return (
     <>
+      <button onClick={handleAddWorkoutClick}>Add</button>
       {workouts.map((workout) => (
         <div key={workout.id} className='container'>
           <div className='head'>

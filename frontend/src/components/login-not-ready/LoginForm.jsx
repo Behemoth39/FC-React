@@ -1,6 +1,6 @@
 import "./loginform.css";
 
-const Login = () => {
+const LoginForm = () => {
   return (
     <>
       <div class='loginContainer hidden' id='login-menu'>
@@ -51,4 +51,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginForm;
