@@ -1,7 +1,7 @@
 import FoodList from "./FoodList";
 import "./food.css";
 
-const Food = () => {
+const Food = ({ foods }) => {
   return (
     <main>
       <section className='table-holder'>
@@ -28,7 +28,7 @@ const Food = () => {
               </tr>
             </thead>
             <tbody id='foods'>
-              <FoodList />
+              <FoodList foods={foods} />
             </tbody>
             <tfoot>
               <tr>

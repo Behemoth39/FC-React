@@ -3,7 +3,7 @@ import "./home.css";
 const Home = () => {
   return (
     <main>
-      <article class='home-banner'>
+      <article className='home-banner'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel nisi ac justo
           lobortis rutrum nec sed neque. Mauris vel libero sed diam viverra vestibulum vitae at
@@ -11,12 +11,12 @@ const Home = () => {
           euismod sed rutrum id, tincidunt quis purus. Curabitur imperdiet.
         </p>
       </article>
-      <article class='workout-container'>
-        <section class='workout'>
-          <section class='work-row-1'>
-            <img src='./img/gym.png' alt='gym' height='450' width='600' />
+      <article className='workout-container'>
+        <section className='workout'>
+          <section className='work-row-1'>
+            <img src='.../assets/img/gym.png' alt='gym' height='450' width='600' />
           </section>
-          <section class='work-row-2'>
+          <section className='work-row-2'>
             <h2>Workout</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel nisi ac justo
@@ -34,8 +34,8 @@ const Home = () => {
           </section>
         </section>
       </article>
-      <article class='food'>
-        <section class='food-row-1'>
+      <article className='food'>
+        <section className='food-row-1'>
           <h2>Food</h2>
           <p>
             Nam vel purus vitae lorem elementum convallis. Morbi a aliquet turpis, pretium commodo
@@ -48,12 +48,12 @@ const Home = () => {
             convallis, sit amet facilisis purus.
           </p>
         </section>
-        <section class='food-row-2'>
-          <img src='./img/food.png' alt='food' height='450' width='600' />
+        <section className='food-row-2'>
+          <img src='../assets/img/food.png' alt='food' height='450' width='600' />
         </section>
       </article>
-      <article class='info'>
-        <section class='info-row-1'>
+      <article className='info'>
+        <section className='info-row-1'>
           <h3>News</h3>
           <p>
             Integer sit amet auctor tortor. Etiam aliquet dolor interdum vestibulum bibendum.
@@ -61,7 +61,7 @@ const Home = () => {
             purus mollis.
           </p>
         </section>
-        <section class='info-row-2'>
+        <section className='info-row-2'>
           <h3>Updates</h3>
           <p>
             Integer sit amet auctor tortor. Etiam aliquet dolor interdum vestibulum bibendum.
