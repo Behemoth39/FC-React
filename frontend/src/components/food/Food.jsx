@@ -1,11 +1,14 @@
 import FoodList from "./FoodList";
+import FoodSum from "./FoodsSum";
+import FoodNote from "./FoodNote";
+import { FoodLog } from "../buttons/Buttons";
 import "./food.css";
 
 const Food = ({ foods }) => {
   return (
     <main>
       <section className='table-holder'>
-        <button className='cal'>Logs</button>
+        <FoodLog />
         <div className='table-container'>
           <table className='main-table'>
             <colgroup>
@@ -37,38 +40,8 @@ const Food = ({ foods }) => {
             </tfoot>
           </table>
           <div className='sum-note'>
-            <table className='sub-table'>
-              <colgroup>
-                <col className='col-4' />
-                <col className='col-4' />
-                <col className='col-4' />
-                <col className='col-4' />
-              </colgroup>
-              <thead>
-                <tr>
-                  <td className='header' colSpan='4'>
-                    Daily totals
-                  </td>
-                </tr>
-                <tr>
-                  <td>Calories</td>
-                  <td>Protein</td>
-                  <td>Carbs</td>
-                  <td>Fats</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1831</td>
-                  <td>110,15</td>
-                  <td>156,96</td>
-                  <td>90,77</td>
-                </tr>
-              </tbody>
-            </table>
-            <div className='text-window'>
-              <p>Food notes</p>
-            </div>
+            <FoodSum />
+            <FoodNote />
           </div>
         </div>
       </section>
