@@ -1,3 +1,5 @@
+import { EditBtnLogic } from "./ButtonLogic";
+
 import "./buttons.css";
 
 const WorkoutButtons = () => {
@@ -12,7 +14,11 @@ const WorkoutButtons = () => {
 // find better way to combine buttons
 
 const EditBtn = () => {
-  return <button className='edit'>E</button>;
+  return (
+    <button onClick={EditBtnLogic} className='edit'>
+      E
+    </button>
+  );
 };
 
 const AddSetBtn = () => {

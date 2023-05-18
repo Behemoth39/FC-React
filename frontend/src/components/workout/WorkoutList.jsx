@@ -1,4 +1,4 @@
-import { EditBtn, AddSetBtn } from "../Buttons/Buttons";
+import { EditBtn, AddSetBtn } from "../buttons/Buttons";
 
 const WorkoutList = ({ workouts }) => {
   if (!workouts || workouts.lengt === 0) {

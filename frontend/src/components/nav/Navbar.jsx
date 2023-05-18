@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
       <div class='mainbar'>
         <ul class='navbar-links'>
           <li class='navbar-site-name'>
-            <a href='../index.html'>Fitness Companion</a>
+            <Link ta='../index.html'>Fitness Companion</Link>
           </li>
           <li class='toggle'>
             <input class='menu-btn' type='checkbox' id='menu-btn' />
@@ -17,31 +18,31 @@ const Navbar = () => {
             </label>
           </li>
           <li class='li-item'>
-            <a href='../index.html'>Home</a>
+            <Link ta='../index.html'>Home</Link>
           </li>
           <li class='li-item'>
-            <a href='./food.html'>Food</a>
+            <Link ta='./food.html'>Food</Link>
           </li>
           <li class='li-item'>
-            <a href='./workout.html'>Workout</a>
+            <Link ta='./workout.html'>Workout</Link>
           </li>
           <li class='li-item'>
-            <a href=''>About</a>
+            <Link ta='#'>About</Link>
           </li>
           <li class='li-item'>
-            <a href=''>Login | Signup</a>
+            <Link ta='#'>Login | Signup</Link>
           </li>
           <li class='li-item'>
-            <a href='./food.html'>Diary</a>
+            <Link ta='./food.html'>Diary</Link>
           </li>
           <li class='li-item'>
-            <a href=''>My Plans</a>
+            <Link ta='#'>My Plans</Link>
           </li>
           <li class='li-item'>
-            <a href=''>Free Plans</a>
+            <Link ta='#'>Free Plans</Link>
           </li>
           <li class='li-item'>
-            <a href=''>Premium Plans</a>
+            <Link ta='#'>Premium Plans</Link>
           </li>
         </ul>
       </div>
@@ -50,38 +51,38 @@ const Navbar = () => {
       <div class='mainbar'>
         <ul class='navbar-links'>
           <li class='navbar-site-name'>
-            <a href='../index.html'>Fitness Companion</a>
+            <Link ta='../index.html'>Fitness Companion</Link>
           </li>
           <li>
-            <a href='../index.html'>Home</a>
+            <Link ta='../index.html'>Home</Link>
           </li>
           <li>
-            <a href='./food.html'>Food</a>
+            <Link ta='./food.html'>Food</Link>
           </li>
           <li>
-            <a href='./workout.html'>Workout</a>
+            <Link ta='./workout.html'>Workout</Link>
           </li>
           <li>
-            <a href=''>About</a>
+            <Link ta='#'>About</Link>
           </li>
           <li>
-            <a href=''>Login | Signup</a>
+            <Link ta='#'>Login | Signup</Link>
           </li>
         </ul>
       </div>
       <div class='subbar'>
         <ul class='subbar-links'>
           <li>
-            <a href='./food.html'>Diary</a>
+            <Link ta='./food.html'>Diary</Link>
           </li>
           <li>
-            <a href=''>My Plans</a>
+            <Link ta='#'>My Plans</Link>
           </li>
           <li>
-            <a href=''>Free Plans</a>
+            <Link ta='#'>Free Plans</Link>
           </li>
           <li>
-            <a href=''>Premium Plans</a>
+            <Link ta='#'>Premium Plans</Link>
           </li>
         </ul>
       </div>

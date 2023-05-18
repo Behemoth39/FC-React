@@ -2,6 +2,7 @@ import FoodList from "./FoodList";
 import FoodSum from "./FoodsSum";
 import FoodNote from "./FoodNote";
 import { FoodLog, AddFoodBtn } from "../buttons/Buttons";
+
 import "./food.css";
 
 const Food = ({ foods }) => {
