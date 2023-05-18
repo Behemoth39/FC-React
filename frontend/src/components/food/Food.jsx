@@ -1,7 +1,7 @@
 import FoodList from "./FoodList";
 import FoodSum from "./FoodsSum";
 import FoodNote from "./FoodNote";
-import { FoodLog } from "../buttons/Buttons";
+import { FoodLog, AddFoodBtn } from "../buttons/Buttons";
 import "./food.css";
 
 const Food = ({ foods }) => {
@@ -35,7 +35,7 @@ const Food = ({ foods }) => {
             </tbody>
             <tfoot>
               <tr>
-                <td colSpan='3'>Add Meal</td>
+                <AddFoodBtn />
               </tr>
             </tfoot>
           </table>

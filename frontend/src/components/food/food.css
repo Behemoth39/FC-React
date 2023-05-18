@@ -60,13 +60,7 @@
     margin-top: 2rem;
     min-height: 8rem;
     width: 90%;
-  }
-  .delete {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--edit-color);
-  }
+  } 
 }
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
@@ -123,12 +117,6 @@
     color: var(--secondary-edit-color);
     font-size: 1rem;
     background-color: var(--secondary-text-color);
-  }
-  .delete {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--edit-color);
   }
   .sum-note {
     display: flex;
@@ -201,12 +189,6 @@
     color: var(--secondary-edit-color);
     font-size: 15;
     background-color: var(--secondary-text-color);
-  }
-  .delete {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--edit-color);
   }
   .text-window {
     text-align: center;

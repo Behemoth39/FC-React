@@ -1,4 +1,5 @@
-// For test
+import { EditBtn, AddSetBtn } from "../Buttons/Buttons";
+
 const WorkoutList = ({ workouts }) => {
   if (!workouts || workouts.lengt === 0) {
     return (
@@ -13,15 +14,15 @@ const WorkoutList = ({ workouts }) => {
         <div key={workout.id} className='container'>
           <div className='head'>
             <h3>{workout.exercise}</h3>
-            <p className='edit'>E</p>
+            <EditBtn />
           </div>
           <div className='content' id='exercise'>
             <p>{workout.sets}</p>
             <p>{workout.reps}</p>
             <p>{workout.weight}</p>
-            <p className='edit'>E</p>
+            <EditBtn />
           </div>
-          <div className='add-set'>Add set</div>
+          <AddSetBtn />
         </div>
       ))}
     </>

@@ -14,7 +14,7 @@ const Home = () => {
       <article className='workout-container'>
         <section className='workout'>
           <section className='work-row-1'>
-            <img src='.../assets/img/gym.png' alt='gym' height='450' width='600' />
+            <img src={require("../../assets/img/gym.png")} alt='gym' height='450' width='600' />
           </section>
           <section className='work-row-2'>
             <h2>Workout</h2>
@@ -49,7 +49,7 @@ const Home = () => {
           </p>
         </section>
         <section className='food-row-2'>
-          <img src='../assets/img/food.png' alt='food' height='450' width='600' />
+          <img src={require("../../assets/img/food.png")} alt='food' height='450' width='600' />
         </section>
       </article>
       <article className='info'>

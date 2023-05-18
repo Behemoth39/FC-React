@@ -1,4 +1,5 @@
-// For test
+import { DeleteBtn } from "../buttons/Buttons";
+
 const FoodList = ({ foods }) => {
   if (!foods || foods.lengt === 0) {
     return (
@@ -17,7 +18,7 @@ const FoodList = ({ foods }) => {
           <td>{food.protein}</td>
           <td>{food.carbs}</td>
           <td>{food.fats}</td>
-          <td className='delete'>X</td>
+          <DeleteBtn />
         </tr>
       ))}
     </>

@@ -9,8 +9,26 @@ const WorkoutButtons = () => {
   );
 };
 
+// find better way to combine buttons
+
+const EditBtn = () => {
+  return <button className='edit'>E</button>;
+};
+
+const AddSetBtn = () => {
+  return <button className='add-set'>Add set</button>;
+};
+
+const AddFoodBtn = () => {
+  return <button className='add-meal'>Add meal</button>;
+};
+
+const DeleteBtn = () => {
+  return <button className='delete'>X</button>;
+};
+
 const FoodLog = () => {
   return <button className='cal'>Logs</button>;
 };
 
-export { WorkoutButtons, FoodLog };
+export { WorkoutButtons, EditBtn, AddSetBtn, FoodLog, AddFoodBtn, DeleteBtn };

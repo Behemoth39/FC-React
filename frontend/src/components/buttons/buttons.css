@@ -1,4 +1,12 @@
+/* remove redundancies */
+
 @media screen and (max-width: 949px) {
+  .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--edit-color);
+  }
   .cal {
     display: flex;
     align-items: center;
@@ -14,6 +22,12 @@
   }
   .cal:hover {
     background-color: var(--btn-light-color);
+  }
+  .add-meal {
+    color: var(--secondary-edit-color);
+    background: none;
+    border: none;
+    cursor: pointer;
   }
   .buttons {
     width: 50%;
@@ -21,8 +35,6 @@
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 2rem;
-  }
-  button {
     margin: auto;
     width: 10rem;
     height: 2.5rem;
@@ -30,12 +42,18 @@
     color: var(--secondary-text-color);
     background-color: var(--btn-dark-color);
   }
-  button:hover {
+  .button:hover {
     background-color: var(--btn-light-color);
   }
 }
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
+  .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--edit-color);
+  }
   .cal {
     display: flex;
     align-items: center;
@@ -52,29 +70,39 @@
   .cal:hover {
     background-color: var(--btn-light-color);
   }
+  .add-meal {
+    color: var(--secondary-edit-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
   .buttons {
     position: fixed;
     right: 4rem;
     display: flex;
     flex-direction: column;
     margin: 0%;
-  }
-  button {
     width: 10rem;
     height: 2.5rem;
     border-radius: 0.5rem;
     color: var(--secondary-text-color);
     background-color: var(--btn-dark-color);
   }
-  button:last-child {
+  .button:last-child {
     margin-top: 1rem;
   }
-  button:hover {
+  .button:hover {
     background-color: var(--btn-light-color);
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--edit-color);
+  }
   .cal {
     display: flex;
     align-items: center;
@@ -91,24 +119,26 @@
   .cal:hover {
     background-color: var(--btn-light-color);
   }
+  .add-meal {
+    color: var(--secondary-edit-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
   .buttons {
     display: flex;
     flex-direction: column;
-    width: 150px;
-    height: 100px;
-    margin-left: auto;
-  }
-  button {
     width: 150px;
     height: 35px;
     border-radius: 10px;
     color: var(--secondary-text-color);
     background-color: var(--btn-dark-color);
+    margin-left: auto;
   }
-  button:last-child {
+  .button:last-child {
     margin-top: auto;
   }
-  button:hover {
+  .button:hover {
     background-color: var(--btn-light-color);
   }
 }
