@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Navbar from "./components/shared/Navbar";
 import Home from "./components/home/Home";
 import Food from "./components/food/Food";
 import Workout from "./components/workout/Workout";
@@ -15,6 +16,7 @@ import workouts from "./data/workouts.json";
 const App = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/food' element={<Food foods={foods} />} />

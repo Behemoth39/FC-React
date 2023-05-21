@@ -28,7 +28,8 @@
 .navbar-links li {
   padding: 0.6rem;
 }
-.navbar-links a:hover {
+.navbar-links a:hover,
+.active {
   background-color: var(--secondary-color);
 }
 .li-item {
