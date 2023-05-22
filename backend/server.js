@@ -1,4 +1,8 @@
 const express = require("express");
+const dotenv = require("dotenv");
+const axios = require("axios");
+
+dotenv.config({ path: ".config/.env" });
 
 const app = express();
 
@@ -6,6 +10,6 @@ app.get("/", (req, res) => {
   res.send("Works?");
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT;
 
 app.listen(PORT);
