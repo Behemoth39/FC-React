@@ -10,6 +10,10 @@ app.get("/api", (req, res) => {
   res.send("Works?!");
 });
 
+app.post("/api", (req, res) => {
+  res.send("Works?!");
+});
+
 const PORT = process.env.PORT;
 
 app.listen(PORT);
