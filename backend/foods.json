@@ -53,6 +53,10 @@
       "protein": 48,
       "carbs": 5,
       "fats": 1.74
+    },
+    {
+      "name": "Körv",
+      "id": 7
     }
   ]
 }

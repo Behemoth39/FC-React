@@ -5,6 +5,7 @@ import FoodList from "./FoodList";
 import FoodSum from "./FoodsSum";
 import FoodNote from "./FoodNote";
 import { FoodLog, AddFoodBtn } from "../buttons/Buttons";
+import AddMeal from "../fom/AddMeal";
 
 import "./food.css";
 
@@ -23,10 +24,22 @@ const Food = () => {
     loadFoods();
   }, []);
 
+  // pressing Add meal should bring up AddMeal and maybe hide FoodList?
+  const onAddMealHandler = async (e) => {
+    e.preventDefault();
+    let foodList = [];
+    const name = e.target.meal.value;
+    const newMeal = { name };
+    const { data } = await axios.post(url, newMeal);
+    foodList = [...food, data];
+    setFood(foodList);
+  };
+
   return (
     <main>
       <section className='table-holder'>
         <FoodLog />
+        <AddMeal onAddMeal={onAddMealHandler} />
         <div className='table-container'>
           <table className='main-table'>
             <colgroup>
