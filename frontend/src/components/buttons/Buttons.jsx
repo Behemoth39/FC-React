@@ -1,17 +1,25 @@
-import { EditBtnLogic } from "./ButtonLogic";
+import {
+  EditBtnLogic,
+  DeleteBtnLogic,
+  AddFoodBtnLogic,
+  FoodLogLogic,
+  AddSetBtnlogic,
+  AddexerciseBtnlogic,
+  WorkoutLogLogic,
+} from "./ButtonLogic";
 
 import "./buttons.css";
+
+//way to many buttons in the same file
 
 const WorkoutButtons = () => {
   return (
     <div className='buttons'>
-      <button>Add exercise</button>
-      <button>Logs</button>
+      <button onClick={AddexerciseBtnlogic}>Add exercise</button>
+      <button onClick={WorkoutLogLogic}>Logs</button>
     </div>
   );
 };
-
-// find better way to combine buttons
 
 const EditBtn = () => {
   return (
@@ -22,19 +30,35 @@ const EditBtn = () => {
 };
 
 const AddSetBtn = () => {
-  return <button className='add-set'>Add set</button>;
+  return (
+    <button onClick={AddSetBtnlogic} className='add-set'>
+      Add set
+    </button>
+  );
 };
 
 const AddFoodBtn = () => {
-  return <button className='add-meal'>Add meal</button>;
+  return (
+    <button onClick={AddFoodBtnLogic} className='add-meal'>
+      Add meal
+    </button>
+  );
 };
 
 const DeleteBtn = () => {
-  return <button className='delete'>X</button>;
+  return (
+    <button onClick={DeleteBtnLogic} className='delete'>
+      X
+    </button>
+  );
 };
 
 const FoodLog = () => {
-  return <button className='cal'>Logs</button>;
+  return (
+    <button onClick={FoodLogLogic} className='log'>
+      Logs
+    </button>
+  );
 };
 
 export { WorkoutButtons, EditBtn, AddSetBtn, FoodLog, AddFoodBtn, DeleteBtn };
