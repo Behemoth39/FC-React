@@ -1,4 +1,5 @@
-import { DeleteBtn } from "../buttons/Buttons";
+import { Fragment } from "react";
+import FoodItem from "./FoodItem";
 
 const FoodList = ({ foods }) => {
   if (!foods || foods.lengt === 0) {
@@ -11,15 +12,9 @@ const FoodList = ({ foods }) => {
   return (
     <>
       {foods.map((food) => (
-        <tr key={food.id}>
-          <td>{food.name}</td>
-          <td>{food.amount}</td>
-          <td>{food.calories}</td>
-          <td>{food.protein}</td>
-          <td>{food.carbs}</td>
-          <td>{food.fats}</td>
-          <DeleteBtn />
-        </tr>
+        <Fragment key={food.id}>
+          <FoodItem food={food} />
+        </Fragment>
       ))}
     </>
   );

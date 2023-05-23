@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 import FoodList from "./FoodList";
 import FoodSum from "./FoodsSum";
 import FoodNote from "./FoodNote";
@@ -5,7 +8,21 @@ import { FoodLog, AddFoodBtn } from "../buttons/Buttons";
 
 import "./food.css";
 
-const Food = ({ foods }) => {
+const Food = () => {
+  // Add error handler for axios
+
+  const [food, setFood] = useState([]);
+  const url = "http://localhost:5000/api/v1/food";
+
+  useEffect(() => {
+    const loadFoods = async () => {
+      const { data } = await axios.get(url);
+      setFood(data);
+    };
+
+    loadFoods();
+  }, []);
+
   return (
     <main>
       <section className='table-holder'>
@@ -32,11 +49,13 @@ const Food = ({ foods }) => {
               </tr>
             </thead>
             <tbody id='foods'>
-              <FoodList foods={foods} />
+              <FoodList foods={food} />
             </tbody>
             <tfoot>
               <tr>
-                <AddFoodBtn />
+                <td>
+                  <AddFoodBtn />
+                </td>
               </tr>
             </tfoot>
           </table>

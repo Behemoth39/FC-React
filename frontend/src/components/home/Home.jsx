@@ -1,4 +1,4 @@
-import Banner from "./banner";
+import Banner from "./Banner";
 import Workout from "./Workout";
 import Food from "./Food";
 import News from "./News";

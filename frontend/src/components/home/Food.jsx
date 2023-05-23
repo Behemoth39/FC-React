@@ -1,4 +1,4 @@
-import food from "./assets/img/food.png";
+import foodImg from "../../assets/img/food.png";
 
 const Food = () => {
   return (
@@ -17,7 +17,7 @@ const Food = () => {
         </p>
       </section>
       <section className='food-row-2'>
-        <img src={food} alt='food' height='450' width='600' />
+        <img src={foodImg} alt='food' height='450' width='600' />
       </section>
     </article>
   );

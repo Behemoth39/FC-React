@@ -1,4 +1,4 @@
-import gym from "./assets/img/gym.png";
+import gym from "../../assets/img/gym.png";
 
 const Workout = () => {
   return (

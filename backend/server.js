@@ -1,11 +1,15 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const axios = require("axios");
+var cors = require("cors");
 
 dotenv.config({ path: "./config/.env" });
 
 const app = express();
 app.use(express.json());
+
+// Had to add cors for access
+app.use(cors());
 
 const URL = process.env.URL;
 

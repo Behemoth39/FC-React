@@ -10,7 +10,6 @@ import Exercise from "./components/exercise/Exercise";
 import "./assets/css/base.css";
 import "./assets/css/color.css";
 
-import foods from "./data/foods.json";
 import workouts from "./data/workouts.json";
 
 const App = () => {
@@ -19,7 +18,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/food' element={<Food foods={foods} />} />
+        <Route path='/food' element={<Food />} />
         <Route path='/workout' element={<Workout workouts={workouts} />} />
         <Route path='/exercise' element={<Exercise />} />
       </Routes>
