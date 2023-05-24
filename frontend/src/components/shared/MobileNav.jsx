@@ -11,7 +11,7 @@ const MobileNav = () => {
           </li>
           <li className='toggle'>
             <input className='menu-btn' type='checkbox' id='menu-btn' />
-            <label className='menu-icon' for='menu-btn'>
+            <label className='menu-icon' htmlFor='menu-btn'>
               <span>
                 <i className='fa-solid fa-bars'></i>
               </span>

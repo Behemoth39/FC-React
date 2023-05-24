@@ -13,7 +13,12 @@ const Food = () => {
   // Add error handler
 
   const [food, setFood] = useState([]);
+  const [displayFoodForm, setDisplayFoodForm] = useState(false);
   const url = "http://localhost:5000/api/v1/food";
+
+  const onDisplayForm = () => {
+    setDisplayFoodForm(true);
+  };
 
   useEffect(() => {
     const loadFoods = async () => {
@@ -24,18 +29,11 @@ const Food = () => {
     loadFoods();
   }, []);
 
-  /*const onAddMealHandler = async (e) => {
-    e.preventDefault();
+  const onAddMealHandler = (data) => {
     let foodList = [];
-    const name = e.target.meal.value;
-    const newMeal = { name };
-    const { data } = await axios.post(url, newMeal);
     foodList = [...food, data];
     setFood(foodList);
-    
-    <FoodForm onAddMeal={onAddMealHandler} />
-    
-  };*/
+  };
 
   // pressing Add meal should bring up FoodForm and maybe hide the rest?
   return (
@@ -70,12 +68,12 @@ const Food = () => {
               <tfoot>
                 <tr>
                   <td>
-                    <AddFoodBtn />
+                    <AddFoodBtn displayForm={onDisplayForm} />
                   </td>
                 </tr>
               </tfoot>
             </table>
-            <FoodForm />
+            {displayFoodForm === false ? null : <FoodForm onFoodAdded={onAddMealHandler} />}
           </div>
           <div className='sum-note'>
             <FoodSum />

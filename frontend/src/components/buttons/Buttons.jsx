@@ -1,7 +1,6 @@
 import {
   EditBtnLogic,
   DeleteBtnLogic,
-  AddFoodBtnLogic,
   FoodLogLogic,
   AddSetBtnlogic,
   AddexerciseBtnlogic,
@@ -37,9 +36,9 @@ const AddSetBtn = () => {
   );
 };
 
-const AddFoodBtn = () => {
+const AddFoodBtn = ({ displayForm }) => {
   return (
-    <button onClick={AddFoodBtnLogic} className='add-meal'>
+    <button onClick={displayForm} className='add-meal'>
       Add meal
     </button>
   );
