@@ -1,6 +1,6 @@
 import { DeleteBtn } from "../buttons/Buttons";
 
-const FoodItem = ({food}) => {
+const FoodItem = ({ food }) => {
   return (
     <tr key={food.id}>
       <td>{food.name}</td>
@@ -10,7 +10,7 @@ const FoodItem = ({food}) => {
       <td>{food.carbs}</td>
       <td>{food.fats}</td>
       <td>
-        <DeleteBtn />
+        <DeleteBtn food={food} />
       </td>
     </tr>
   );

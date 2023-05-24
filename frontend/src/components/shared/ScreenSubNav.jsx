@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const ScreenSubNav = () => {
+const ScreenSubFoodNav = () => {
   return (
     <div className='subbar'>
       <ul className='subbar-links'>
@@ -20,18 +20,25 @@ const ScreenSubNav = () => {
     </div>
   );
 };
+const ScreenSubWorkoutNav = () => {
+  return (
+    <div className='subbar'>
+      <ul className='subbar-links'>
+        <li>
+          <Link to='/workout'>Diary</Link>
+        </li>
+        <li>
+          <Link to='#'>My Progams</Link>
+        </li>
+        <li>
+          <Link to='#'>Free Programs</Link>
+        </li>
+        <li>
+          <Link to='#'>Premium Programs</Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
-export default ScreenSubNav;
-
-/*
-
-  <div class="subbar">
-          <ul class="subbar-links">
-            <li><a href="./workout.html">Diary</a></li>
-            <li><a href="">My Progams</a></li>
-            <li><a href="">Free Programs</a></li>
-            <li><a href="">Premium Programs</a></li>
-          </ul>
-        </div>
-
-*/
+export { ScreenSubFoodNav, ScreenSubWorkoutNav };

@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
-import MobileSubNav from "./MobileSubNav";
+import { MobileSubFoodNav, MobileSubWorkoutNav } from "./MobileSubNav";
 
-const MobileNav = () => {
+const MobileNav = ({ page }) => {
   return (
     <nav className='navbar-mobile'>
       <div className='mainbar'>
@@ -32,7 +32,8 @@ const MobileNav = () => {
           <li className='li-item'>
             <Link to='#'>Login | Signup</Link>
           </li>
-          <MobileSubNav />
+          {page === "/food" && <MobileSubFoodNav />}
+          {page === "/workout" && <MobileSubWorkoutNav />}
         </ul>
       </div>
     </nav>

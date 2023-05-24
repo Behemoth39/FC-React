@@ -1,15 +1,27 @@
-import {
-  EditBtnLogic,
-  DeleteBtnLogic,
-  FoodLogLogic,
-  AddSetBtnlogic,
-  AddexerciseBtnlogic,
-  WorkoutLogLogic,
-} from "./ButtonLogic";
-
 import "./buttons.css";
 
-//way to many buttons in the same file
+const EditBtnLogic = () => {
+  return console.log("edited");
+};
+
+// how to get correct food.id from DeleteBtn
+const DeleteBtnLogic = ({ food }) => {
+  return console.log({ food });
+};
+const FoodLogLogic = () => {
+  return console.log("food log");
+};
+const AddSetBtnlogic = () => {
+  return console.log("added set");
+};
+const AddexerciseBtnlogic = () => {
+  return console.log("add exercise ");
+};
+const WorkoutLogLogic = () => {
+  return console.log("workout log");
+};
+
+// way to many buttons in the same file
 
 const WorkoutButtons = () => {
   return (
@@ -44,7 +56,8 @@ const AddFoodBtn = ({ displayForm }) => {
   );
 };
 
-const DeleteBtn = () => {
+// filter and send { food } to DeleteBtnLogic
+const DeleteBtn = ({ food }) => {
   return (
     <button onClick={DeleteBtnLogic} className='delete'>
       X

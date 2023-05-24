@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const MobileSubNav = () => {
+const MobileSubFoodNav = () => {
   return (
     <>
       <li className='li-item'>
@@ -19,17 +19,23 @@ const MobileSubNav = () => {
   );
 };
 
-export default MobileSubNav;
+const MobileSubWorkoutNav = () => {
+  return (
+    <>
+      <li className='li-item'>
+        <Link to='/workout'>Diary</Link>
+      </li>
+      <li className='li-item'>
+        <Link to='#'>My Programs</Link>
+      </li>
+      <li className='li-item'>
+        <Link to='#'>Free Programs</Link>
+      </li>
+      <li className='li-item'>
+        <Link to='#'>Premium Programs</Link>
+      </li>
+    </>
+  );
+};
 
-/*
-
-  <div class="subbar">
-          <ul class="subbar-links">
-            <li><a href="./workout.html">Diary</a></li>
-            <li><a href="">My Progams</a></li>
-            <li><a href="">Free Programs</a></li>
-            <li><a href="">Premium Programs</a></li>
-          </ul>
-        </div>
-
-*/
+export { MobileSubFoodNav, MobileSubWorkoutNav };

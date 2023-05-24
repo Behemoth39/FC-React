@@ -1,15 +1,17 @@
+import { useState } from "react";
 import MobileNav from "./MobileNav";
 import ScreenNav from "./ScreenNav";
 import "./navbar.css";
 
-// send info down to submenus
-//choose submenus depending on page
-
 const Navbar = () => {
+  const [page] = useState(window.location.pathname);
+
+  //reloads page to many times
+  //setPage(window.location.pathname);
   return (
     <header>
-      <MobileNav />
-      <ScreenNav />
+      <MobileNav page={page} />
+      <ScreenNav page={page} />
     </header>
   );
 };

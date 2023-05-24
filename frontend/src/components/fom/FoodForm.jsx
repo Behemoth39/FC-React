@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./forms.css";
 
-const FoodForm = ({ onFoodAdded }) => {
+const FoodForm = ({ onFoodAdded, HideForm }) => {
   const [name, setname] = useState("");
   const [amount, setamount] = useState("");
   const [calories, setcalories] = useState("");
@@ -13,12 +13,12 @@ const FoodForm = ({ onFoodAdded }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const meal = { name, amount, calories, protein, carbs, fats };
 
     const url = "http://localhost:5000/api/v1/food";
     const { data } = await axios.post(url, meal);
     onFoodAdded(data);
+    HideForm();
   };
 
   return (
@@ -43,7 +43,7 @@ const FoodForm = ({ onFoodAdded }) => {
       <label>fats (in g):</label>
       <input type='number' onChange={(e) => setfats(e.target.value)} value={fats} />
 
-      <button>Add Meal</button>
+      <button> Add Meal</button>
     </form>
   );
 };

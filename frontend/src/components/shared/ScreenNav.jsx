@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
-import ScreenSubNav from "./ScreenSubNav";
+import { ScreenSubFoodNav, ScreenSubWorkoutNav } from "./ScreenSubNav";
 
-const ScreenNav = () => {
+const ScreenNav = ({ page }) => {
   return (
     <nav className='navbar-screen'>
       <div className='mainbar'>
@@ -26,7 +26,8 @@ const ScreenNav = () => {
           </li>
         </ul>
       </div>
-      <ScreenSubNav />
+      {page === "/food" && <ScreenSubFoodNav />}
+      {page === "/workout" && <ScreenSubWorkoutNav />}
     </nav>
   );
 };

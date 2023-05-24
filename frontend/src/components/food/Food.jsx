@@ -19,6 +19,9 @@ const Food = () => {
   const onDisplayForm = () => {
     setDisplayFoodForm(true);
   };
+  const onHideForm = () => {
+    setDisplayFoodForm(false);
+  };
 
   useEffect(() => {
     const loadFoods = async () => {
@@ -73,7 +76,9 @@ const Food = () => {
                 </tr>
               </tfoot>
             </table>
-            {displayFoodForm === false ? null : <FoodForm onFoodAdded={onAddMealHandler} />}
+            {displayFoodForm === false ? null : (
+              <FoodForm onFoodAdded={onAddMealHandler} HideForm={onHideForm} />
+            )}
           </div>
           <div className='sum-note'>
             <FoodSum />
