@@ -1,5 +1,5 @@
 import WorkoutList from "./WorkoutList";
-import { WorkoutButtons } from "../buttons/Buttons";
+import { WorkoutButtons } from "../../components/buttons/Buttons";
 
 import "./workout.css";
 

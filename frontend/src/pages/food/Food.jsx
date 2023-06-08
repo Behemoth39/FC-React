@@ -4,8 +4,8 @@ import axios from "axios";
 import FoodList from "./FoodList";
 import FoodSum from "./FoodsSum";
 import FoodNote from "./FoodNote";
-import { FoodLog, AddFoodBtn } from "../buttons/Buttons";
-import FoodForm from "../fom/FoodForm";
+import { FoodLog, AddFoodBtn } from "../../components/buttons/Buttons";
+import FoodForm from "../../components/form/FoodForm";
 
 import "./food.css";
 

@@ -1,4 +1,4 @@
-import { DeleteBtn } from "../buttons/Buttons";
+import { DeleteBtn } from "../../components/buttons/Buttons";
 
 const FoodItem = ({ food }) => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/shared/Navbar";
-import Home from "./components/home/Home";
-import Food from "./components/food/Food";
-import Workout from "./components/workout/Workout";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/home/Home";
+import Food from "./pages/food/Food";
+import Workout from "./pages/workout/Workout";
 import Exercise from "./components/exercise/Exercise";
 
 import "./assets/css/base.css";

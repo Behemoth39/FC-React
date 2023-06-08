@@ -4,7 +4,7 @@ const EditBtnLogic = () => {
   return console.log("edited");
 };
 
-// how to get correct food.id from DeleteBtn
+// get correct food.id from DeleteBtn
 const DeleteBtnLogic = ({ food }) => {
   return console.log({ food });
 };
